@@ -8,8 +8,9 @@ var url = "https://api.funtranslations.com/translate/minion.json"
 
 // function to add the user input text to the URL
 function appendURL(value){
-    var encodedValue = encodeURIComponent(value)
-    var append = url + "?text=" + encodedValue
+    // var encodedValue = encodeURIComponent(value)
+    //could not use encodeURI() as for long strings api throws an error
+    var append = url + "?text=" + value
     return append
 }
 
