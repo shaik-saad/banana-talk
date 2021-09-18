@@ -44,7 +44,7 @@ main{
 #translation-output{
     border: 1px solid #333333;
     width: 100%;
-    min-height: 10vh;
+    min-height: 15vh;
     max-height: 15vh;
     overflow: scroll;
 }
@@ -54,7 +54,9 @@ footer{
     text-align: center;
     background-color: var(--primary-color);
     margin-top: 1rem;
-    padding: 1rem 0 2.2rem 0;  
+    padding: 1rem 0 2.2rem 0; 
+    position: fixed; 
+    bottom: 0;
 }
 
 footer p{
