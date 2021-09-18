@@ -5,15 +5,17 @@
 }
 
 :root{
-    --primary-color: #FFD55E
+    --primary-color: #FFD55E;
+    --secondary-color: #5E88FF;
 }
 
 body{
     margin: 0rem;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #333333;
 }
-/* nav */
 
+/* nav */
 nav{
     background-color: var(--primary-color);
     text-align: center;
@@ -21,24 +23,40 @@ nav{
     padding: 1rem;
 }
 
+.navbar-brand{
+    display: inline;
+}
+
+/* main section */
 main{
     max-width: 600px;
     margin: auto;
     padding: 1rem;
+    color: white;
+}
+
+main h3{
+    text-align: center;
 }
 
 #input-textarea{
     display: block;
     margin-top: 2rem;
-    min-height: 10vh;
+    min-height: 15vh;
     width: 100%;
 }
 
+#btn-div{
+    text-align: center;
+}
+
 #btn-translate{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: larger;
     border: none;
     padding: 1rem 2rem;
-    margin: 1rem 0;
+    margin-top: 2rem;
 }
 
 #translation-output{
@@ -47,6 +65,8 @@ main{
     min-height: 15vh;
     max-height: 15vh;
     overflow: scroll;
+    background-color: white;
+    color: black;
 }
 
 footer{
@@ -54,12 +74,29 @@ footer{
     text-align: center;
     background-color: var(--primary-color);
     margin-top: 1rem;
-    padding: 1rem 0 2.2rem 0; 
-    position: fixed; 
-    bottom: 0;
+    padding: 1rem 0 0.5rem 0; 
 }
 
 footer p{
     max-width: 800px;
     margin: auto;
+    display: inline;
+}
+
+.social-icons-list{
+    display: inline;
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 0 0.5rem;
+}
+
+.link{
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
 }
