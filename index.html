@@ -9,26 +9,45 @@
     
     <!-- importing stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- navbar -->
     <nav>
+        <img src="imgs/eyes.png" alt="Minions eyes" height="50px">
         <div class="navbar-brand">Banana Translation</div>
     </nav>
     
     <!-- main user interaction section -->
     <main>
-        <textarea name="input" id="input-textarea" cols="30" rows="10" placeholder="Put your message here which you want to convert."></textarea>
-        <button id="btn-translate">Translate</button>
-
-        <h4>Translation will come here: ⬇️</h4>
+        <h3>About</h3>
+        <p>We all love minions, don't we?. They look cute and they talk cute. Well, you can talk cute like minions too! This fun translation app let's you translate your text from English to Banana language.</p>
+        <textarea name="input" id="input-textarea"  placeholder="Put your message here which you want to convert."></textarea>
+        <div id="btn-div">
+            <button id="btn-translate">Translate</button>
+        </div>
+        <h4 style="text-align: center;">Translation will come here: ⬇️</h4>
         <div id="translation-output"></div>
     </main>
     
     <!-- footer -->
     <footer>
-        <h3>About</h3>
-        <p>We all love minions, don't we?. They look cute and they talk cute. Well, you can talk cute like minions too! This fun translation app let's you translate your text from English to Banana language.</p>
+        <p>If you loved❤️ this app, make sure to follow me on</p>
+        <ul class="social-icons-list">
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/shaik-saad">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/shaiksaadullah">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/shaik-saad">
+                    <i class="fab fa-github"></i>
+                </a></li>
+        </ul>
     </footer>
 
     <!-- importing js file -->
